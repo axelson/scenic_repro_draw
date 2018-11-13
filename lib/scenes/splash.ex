@@ -26,8 +26,12 @@ defmodule ReproEmptyDraw.Scene.Splash do
            fill: {:image, {@parrot_hash, 0}}
          )
 
-  @animate_ms 30
-  @finish_delay_ms 1000
+  @animation_time 500
+  @animation_steps 10
+  @animate_ms round(@animation_time / @animation_steps)
+  # @finish_delay_ms 1000
+  @finish_delay_ms 100
+  # @finish_delay_ms 1
 
   # --------------------------------------------------------
   def init(first_scene, opts) do
@@ -51,6 +55,7 @@ defmodule ReproEmptyDraw.Scene.Splash do
 
     # start a very simple animation timer
     {:ok, timer} = :timer.send_interval(@animate_ms, :animate)
+    # timer = nil
 
     state = %{
       viewport: viewport,
@@ -83,12 +88,13 @@ defmodule ReproEmptyDraw.Scene.Splash do
   end
 
   def handle_info(:animate, %{alpha: alpha, graph: graph} = state) do
+    IO.puts "Splash animate #{alpha}"
     graph =
       graph
       |> Graph.modify(:parrot, &update_opts(&1, fill: {:image, {@parrot_hash, alpha}}))
       |> push_graph()
 
-    {:noreply, %{state | graph: graph, alpha: alpha + 2}}
+    {:noreply, %{state | graph: graph, alpha: alpha + round(256 / @animation_steps)}}
   end
 
   # --------------------------------------------------------

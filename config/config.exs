@@ -7,6 +7,7 @@ config :repro_empty_draw, :viewport, %{
   name: :main_viewport,
   size: {700, 600},
   default_scene: {ReproEmptyDraw.Scene.Splash, ReproEmptyDraw.Scene.Explosion},
+  # default_scene: {ReproEmptyDraw.Scene.Explosion, nil},
   drivers: [
     %{
       module: Scenic.Driver.Glfw,

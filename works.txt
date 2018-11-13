@@ -1,0 +1,78 @@
+07:42:47.578 [info]  glfw update_graph with pending flush!
+07:42:47.578 [info]  glfw graph_key: {:graph, #Reference<0.1960925481.2158755842.95209>, nil}
+07:42:47.582 [info]  flush
+07:42:47.583 [info]  glfw render_one_graph graph %{
+  0 => %{
+    data: {Scenic.Primitive.Group, [1]},
+    styles: %{font: :roboto, font_size: 24}
+  },
+  1 => %{
+    data: {Scenic.Primitive.Circle, 30},
+    id: :circle,
+    styles: %{stroke: {3, {:color, {255, 255, 255, 255}}}},
+    transforms: %{translate: {100, 100}}
+  }
+}
+
+07:42:47.598 [warn]  Animating
+
+
+
+07:42:47.599 [info]  glfw update_graph
+
+07:42:47.599 [info]  glfw render_one_graph graph %{
+  0 => %{
+    data: {Scenic.Primitive.Group, [1]},
+    styles: %{font: :roboto, font_size: 24}
+  },
+  1 => %{
+    data: {Scenic.Primitive.Circle, 30},
+    id: :circle,
+    styles: %{stroke: {3, {:color, {0, 0, 255, 255}}}},
+    transforms: %{translate: {100, 100}}
+  }
+}
+
+07:42:47.614 [info]  flush
+
+07:42:49.578 [warn]  Animating
+
+
+
+07:42:49.579 [info]  glfw update_graph
+
+07:42:49.579 [info]  glfw render_one_graph graph %{
+  0 => %{
+    data: {Scenic.Primitive.Group, [1]},
+    styles: %{font: :roboto, font_size: 24}
+  },
+  1 => %{
+    data: {Scenic.Primitive.Circle, 30},
+    id: :circle,
+    styles: %{stroke: {3, {:color, {255, 0, 0, 255}}}},
+    transforms: %{translate: {100, 100}}
+  }
+}
+
+07:42:49.594 [info]  flush
+
+07:42:50.578 [warn]  Animating
+
+
+
+07:42:50.579 [info]  glfw update_graph
+
+07:42:50.579 [info]  glfw render_one_graph graph %{
+  0 => %{
+    data: {Scenic.Primitive.Group, [1]},
+    styles: %{font: :roboto, font_size: 24}
+  },
+  1 => %{
+    data: {Scenic.Primitive.Circle, 30},
+    id: :circle,
+    styles: %{stroke: {3, {:color, {0, 128, 0, 255}}}},
+    transforms: %{translate: {100, 100}}
+  }
+}
+
+07:42:50.594 [info]  flush

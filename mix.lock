@@ -10,7 +10,7 @@
   "parse_trans": {:hex, :parse_trans, "3.3.0", "09765507a3c7590a784615cfd421d101aec25098d50b89d7aa1d66646bc571c1", [:rebar3], [], "hexpm"},
   "scenic": {:hex, :scenic, "0.9.0", "129594f918b4e2dd97465b95b4fb3582294ac6bb3e931f12edd09913743964eb", [:make, :mix], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm"},
   "scenic_clock": {:hex, :scenic_clock, "0.8.0", "fc1444307062411a3c741c505ae349f2dfd7f5cb71787dfc2fc1b4298daee042", [:mix], [{:scenic, "~> 0.8", [hex: :scenic, repo: "hexpm", optional: false]}, {:timex, "~> 3.3", [hex: :timex, repo: "hexpm", optional: false]}], "hexpm"},
-  "scenic_driver_glfw": {:hex, :scenic_driver_glfw, "0.9.0", "4c7a8300b71ec7174bc7f7d142d1eefbfe345520ed303bab2716a65fc9a21a8c", [:make, :mix], [{:elixir_make, "~> 0.4", [hex: :elixir_make, repo: "hexpm", optional: false]}, {:scenic, "~> 0.9", [hex: :scenic, repo: "hexpm", optional: false]}], "hexpm"},
+  "scenic_driver_glfw": {:git, "https://github.com/boydm/scenic_driver_glfw", "ca37a1504592e08bc1edf77f3f1d89342a77cabd", [tag: "v0.8.0"]},
   "scenic_sensor": {:hex, :scenic_sensor, "0.7.0", "a12aed7596fbab025a535f912325da5a087ff704e96f7acb274c3034d832f9ce", [:mix], [], "hexpm"},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.4", "f0eafff810d2041e93f915ef59899c923f4568f4585904d010387ed74988e77b", [:make, :mix, :rebar3], [], "hexpm"},
   "timex": {:hex, :timex, "3.4.2", "d74649c93ad0e12ce5b17cf5e11fbd1fb1b24a3d114643e86dba194b64439547", [:mix], [{:combine, "~> 0.10", [hex: :combine, repo: "hexpm", optional: false]}, {:gettext, "~> 0.10", [hex: :gettext, repo: "hexpm", optional: false]}, {:tzdata, "~> 0.1.8 or ~> 0.5", [hex: :tzdata, repo: "hexpm", optional: false]}], "hexpm"},

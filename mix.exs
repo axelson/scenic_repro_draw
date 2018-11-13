@@ -23,8 +23,9 @@ defmodule ReproEmptyDraw.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:scenic, "~> 0.8"},
-      {:scenic_driver_glfw, "~> 0.8"},
+      {:scenic, "0.9.0"},
+      # {:scenic_driver_glfw, git: "https://github.com/boydm/scenic_driver_glfw", tag: "v0.8.0"},
+      {:scenic_driver_glfw, path: "../forks/scenic_driver_glfw"},
 
       # These deps are optional and are included as they are often used.
       # If your app doesn't need them, they are safe to remove.
